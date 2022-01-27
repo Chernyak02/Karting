@@ -1,6 +1,6 @@
 ﻿namespace Karting
 {
-    partial class Info
+    partial class ConfirmationRegistration
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmationRegistration));
             this.panel2 = new System.Windows.Forms.Panel();
             this.Date = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Back = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.Kart = new System.Windows.Forms.Button();
-            this.Sponsor = new System.Windows.Forms.Button();
-            this.Result = new System.Windows.Forms.Button();
+            this.OK = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +75,7 @@
             // Back
             // 
             this.Back.BackColor = System.Drawing.Color.White;
-            this.Back.Location = new System.Drawing.Point(29, 20);
+            this.Back.Location = new System.Drawing.Point(33, 29);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(171, 52);
             this.Back.TabIndex = 2;
@@ -104,65 +103,50 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Kart Skills 2017";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(359, 223);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(344, 29);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "С вами свяжуться по поводу оплаты";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(419, 132);
+            this.label4.Location = new System.Drawing.Point(285, 143);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(238, 29);
+            this.label4.Size = new System.Drawing.Size(473, 29);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Подробная информация";
+            this.label4.Text = "Спасибо за вашу регистрацию в качестве гонщика";
             // 
-            // Kart
+            // OK
             // 
-            this.Kart.BackColor = System.Drawing.Color.Gray;
-            this.Kart.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Kart.Location = new System.Drawing.Point(48, 182);
-            this.Kart.Name = "Kart";
-            this.Kart.Size = new System.Drawing.Size(479, 128);
-            this.Kart.TabIndex = 7;
-            this.Kart.Text = "Kart Skills 2017";
-            this.Kart.UseVisualStyleBackColor = false;
-            this.Kart.Click += new System.EventHandler(this.Kart_Click);
+            this.OK.BackColor = System.Drawing.Color.Gray;
+            this.OK.Location = new System.Drawing.Point(464, 318);
+            this.OK.Name = "OK";
+            this.OK.Size = new System.Drawing.Size(147, 67);
+            this.OK.TabIndex = 27;
+            this.OK.Text = "ОК";
+            this.OK.UseVisualStyleBackColor = false;
+            this.OK.Click += new System.EventHandler(this.OK_Click);
             // 
-            // Sponsor
-            // 
-            this.Sponsor.BackColor = System.Drawing.Color.Gray;
-            this.Sponsor.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Sponsor.Location = new System.Drawing.Point(567, 182);
-            this.Sponsor.Name = "Sponsor";
-            this.Sponsor.Size = new System.Drawing.Size(479, 128);
-            this.Sponsor.TabIndex = 8;
-            this.Sponsor.Text = "Список благотворительных организаций";
-            this.Sponsor.UseVisualStyleBackColor = false;
-            this.Sponsor.Click += new System.EventHandler(this.Sponsor_Click);
-            // 
-            // Result
-            // 
-            this.Result.BackColor = System.Drawing.Color.Gray;
-            this.Result.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Result.Location = new System.Drawing.Point(48, 338);
-            this.Result.Name = "Result";
-            this.Result.Size = new System.Drawing.Size(479, 128);
-            this.Result.TabIndex = 9;
-            this.Result.Text = "Предыдущие результаты";
-            this.Result.UseVisualStyleBackColor = false;
-            // 
-            // Info
+            // ConfirmationRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1058, 664);
-            this.Controls.Add(this.Result);
-            this.Controls.Add(this.Sponsor);
-            this.Controls.Add(this.Kart);
+            this.Controls.Add(this.OK);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Info";
+            this.Name = "ConfirmationRegistration";
             this.Text = "KartSkills2017";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -181,9 +165,8 @@
         private Button Back;
         private Label label2;
         private Label label1;
+        private Label label5;
         private Label label4;
-        private Button Kart;
-        private Button Sponsor;
-        private Button Result;
+        private Button OK;
     }
 }

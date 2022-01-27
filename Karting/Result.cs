@@ -11,10 +11,10 @@ using Timer = System.Windows.Forms.Timer;
 
 namespace Karting
 {
-    public partial class Info : Form
+    public partial class Gender : Form
     {
         DateTime voteTime = new DateTime(2022, 6, 20, 10, 0, 0);
-        public Info()
+        public Gender()
         {
             InitializeComponent();
             timer1.Tick += timer1_Tick;
@@ -33,21 +33,16 @@ namespace Karting
 
         private void Back_Click(object sender, EventArgs e)
         {
-            KartSkills2017 frm1 = new KartSkills2017();
+            MenuRacer frm1 = new MenuRacer();
             frm1.Show();
             this.Hide();
         }
 
-        private void Sponsor_Click(object sender, EventArgs e)
+        private void Logout_Click(object sender, EventArgs e)
         {
-            ListSponsor frm2 = new ListSponsor();
+            KartSkills2017 frm2 = new KartSkills2017();
             frm2.Show();
             this.Hide();
-        }
-
-        private void Kart_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

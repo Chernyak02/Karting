@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Date = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Racer = new System.Windows.Forms.Button();
             this.Sponsor = new System.Windows.Forms.Button();
             this.Info = new System.Windows.Forms.Button();
             this.Authorization = new System.Windows.Forms.Button();
@@ -95,17 +95,17 @@
             this.Date.TabIndex = 2;
             this.Date.Text = "label3";
             // 
-            // button1
+            // Racer
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(138, 205);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(176, 143);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = false;
+            this.Racer.BackColor = System.Drawing.Color.White;
+            this.Racer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Racer.BackgroundImage")));
+            this.Racer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Racer.Location = new System.Drawing.Point(138, 205);
+            this.Racer.Name = "Racer";
+            this.Racer.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Racer.Size = new System.Drawing.Size(176, 143);
+            this.Racer.TabIndex = 2;
+            this.Racer.UseVisualStyleBackColor = false;
             // 
             // Sponsor
             // 
@@ -196,7 +196,7 @@
             this.Controls.Add(this.Authorization);
             this.Controls.Add(this.Info);
             this.Controls.Add(this.Sponsor);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Racer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -215,7 +215,7 @@
 
         private Panel panel1;
         private Panel panel2;
-        private Button button1;
+        private Button Racer;
         private Button Sponsor;
         private Button Info;
         private Button Authorization;

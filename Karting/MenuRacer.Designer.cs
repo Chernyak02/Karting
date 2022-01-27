@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuRacer));
             this.panel2 = new System.Windows.Forms.Panel();
             this.Date = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.Kart = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Registration = new System.Windows.Forms.Button();
+            this.Editing = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +75,17 @@
             this.panel1.Size = new System.Drawing.Size(1074, 110);
             this.panel1.TabIndex = 6;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(883, 29);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(171, 52);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Logout";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.Back_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -104,27 +116,29 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Меню гонщика";
             // 
-            // Kart
+            // Registration
             // 
-            this.Kart.BackColor = System.Drawing.Color.Gray;
-            this.Kart.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Kart.Location = new System.Drawing.Point(25, 164);
-            this.Kart.Name = "Kart";
-            this.Kart.Size = new System.Drawing.Size(448, 99);
-            this.Kart.TabIndex = 10;
-            this.Kart.Text = "Регистрация на гонку";
-            this.Kart.UseVisualStyleBackColor = false;
+            this.Registration.BackColor = System.Drawing.Color.Gray;
+            this.Registration.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Registration.Location = new System.Drawing.Point(25, 164);
+            this.Registration.Name = "Registration";
+            this.Registration.Size = new System.Drawing.Size(448, 99);
+            this.Registration.TabIndex = 10;
+            this.Registration.Text = "Регистрация на гонку";
+            this.Registration.UseVisualStyleBackColor = false;
+            this.Registration.Click += new System.EventHandler(this.Registration_Click);
             // 
-            // button1
+            // Editing
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(25, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(448, 99);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Редактирование профиля";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Editing.BackColor = System.Drawing.Color.Gray;
+            this.Editing.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Editing.Location = new System.Drawing.Point(25, 284);
+            this.Editing.Name = "Editing";
+            this.Editing.Size = new System.Drawing.Size(448, 99);
+            this.Editing.TabIndex = 11;
+            this.Editing.Text = "Редакпрофиля";
+            this.Editing.UseVisualStyleBackColor = false;
+            this.Editing.Click += new System.EventHandler(this.Editing_Click);
             // 
             // button2
             // 
@@ -159,17 +173,6 @@
             this.button4.Text = "Мой спонсор";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(883, 29);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(171, 52);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Logout";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.Back_Click);
-            // 
             // MenuRacer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -179,11 +182,12 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Kart);
+            this.Controls.Add(this.Editing);
+            this.Controls.Add(this.Registration);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuRacer";
             this.Text = "KartSkills2017";
             this.panel2.ResumeLayout(false);
@@ -203,8 +207,8 @@
         private Label label2;
         private Label label1;
         private Label label4;
-        private Button Kart;
-        private Button button1;
+        private Button Registration;
+        private Button Editing;
         private Button button2;
         private Button button3;
         private Button button4;

@@ -37,5 +37,19 @@ namespace Karting
             frm1.Show();
             this.Hide();
         }
+
+        private void Registration_Click(object sender, EventArgs e)
+        {
+            RegistrationRace frm2 = new RegistrationRace();
+            frm2.Show();
+            this.Hide();
+        }
+
+        private void Editing_Click(object sender, EventArgs e)
+        {
+            Editing frm3 = new Editing();
+            frm3.Show();
+            this.Hide();
+        }
     }
 }

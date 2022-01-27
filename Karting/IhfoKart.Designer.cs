@@ -1,6 +1,6 @@
 ﻿namespace Karting
 {
-    partial class Info
+    partial class IhfoKart
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IhfoKart));
             this.panel2 = new System.Windows.Forms.Panel();
             this.Date = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -36,9 +36,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.Kart = new System.Windows.Forms.Button();
-            this.Sponsor = new System.Windows.Forms.Button();
-            this.Result = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +52,7 @@
             this.panel2.Location = new System.Drawing.Point(-8, 567);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1074, 100);
-            this.panel2.TabIndex = 5;
+            this.panel2.TabIndex = 7;
             // 
             // Date
             // 
@@ -71,7 +73,7 @@
             this.panel1.Location = new System.Drawing.Point(-8, -3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1074, 110);
-            this.panel1.TabIndex = 4;
+            this.panel1.TabIndex = 6;
             // 
             // Back
             // 
@@ -108,61 +110,76 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(419, 132);
+            this.label4.Location = new System.Drawing.Point(366, 140);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(238, 29);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Подробная информация";
+            this.label4.Size = new System.Drawing.Size(335, 29);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Информация о карт Kart Skills 2017";
             // 
-            // Kart
+            // label3
             // 
-            this.Kart.BackColor = System.Drawing.Color.Gray;
-            this.Kart.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Kart.Location = new System.Drawing.Point(48, 182);
-            this.Kart.Name = "Kart";
-            this.Kart.Size = new System.Drawing.Size(479, 128);
-            this.Kart.TabIndex = 7;
-            this.Kart.Text = "Kart Skills 2017";
-            this.Kart.UseVisualStyleBackColor = false;
-            this.Kart.Click += new System.EventHandler(this.Kart_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(681, 209);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(335, 29);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Информация о карт Kart Skills 2017";
             // 
-            // Sponsor
+            // label5
             // 
-            this.Sponsor.BackColor = System.Drawing.Color.Gray;
-            this.Sponsor.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Sponsor.Location = new System.Drawing.Point(567, 182);
-            this.Sponsor.Name = "Sponsor";
-            this.Sponsor.Size = new System.Drawing.Size(479, 128);
-            this.Sponsor.TabIndex = 8;
-            this.Sponsor.Text = "Список благотворительных организаций";
-            this.Sponsor.UseVisualStyleBackColor = false;
-            this.Sponsor.Click += new System.EventHandler(this.Sponsor_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(715, 298);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(265, 29);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Информация.Информация.";
             // 
-            // Result
+            // label6
             // 
-            this.Result.BackColor = System.Drawing.Color.Gray;
-            this.Result.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Result.Location = new System.Drawing.Point(48, 338);
-            this.Result.Name = "Result";
-            this.Result.Size = new System.Drawing.Size(479, 128);
-            this.Result.TabIndex = 9;
-            this.Result.Text = "Предыдущие результаты";
-            this.Result.UseVisualStyleBackColor = false;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(715, 327);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(265, 29);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Информация.Информация.";
             // 
-            // Info
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(715, 356);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(265, 29);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Информация.Информация.";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(34, 209);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(356, 161);
+            this.panel3.TabIndex = 8;
+            // 
+            // IhfoKart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1058, 664);
-            this.Controls.Add(this.Result);
-            this.Controls.Add(this.Sponsor);
-            this.Controls.Add(this.Kart);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Info";
+            this.Name = "IhfoKart";
             this.Text = "KartSkills2017";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -182,8 +199,10 @@
         private Label label2;
         private Label label1;
         private Label label4;
-        private Button Kart;
-        private Button Sponsor;
-        private Button Result;
+        private Label label3;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Panel panel3;
     }
 }

@@ -35,9 +35,9 @@
             this.Back = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.No = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.Kart = new System.Windows.Forms.Button();
+            this.Yes = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -103,17 +103,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Kart Skills 2017";
             // 
-            // button3
+            // No
             // 
-            this.button3.BackColor = System.Drawing.Color.Gray;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(596, 188);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(295, 99);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Нет";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.No.BackColor = System.Drawing.Color.Gray;
+            this.No.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.No.Location = new System.Drawing.Point(596, 188);
+            this.No.Name = "No";
+            this.No.Size = new System.Drawing.Size(295, 99);
+            this.No.TabIndex = 21;
+            this.No.Text = "Нет";
+            this.No.UseVisualStyleBackColor = false;
+            this.No.Click += new System.EventHandler(this.No_Click);
             // 
             // label4
             // 
@@ -124,19 +124,18 @@
             this.label4.Size = new System.Drawing.Size(283, 42);
             this.label4.TabIndex = 19;
             this.label4.Text = "Участвовали ранее";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // Kart
+            // Yes
             // 
-            this.Kart.BackColor = System.Drawing.Color.Gray;
-            this.Kart.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Kart.Location = new System.Drawing.Point(178, 188);
-            this.Kart.Name = "Kart";
-            this.Kart.Size = new System.Drawing.Size(295, 99);
-            this.Kart.TabIndex = 20;
-            this.Kart.Text = "Да";
-            this.Kart.UseVisualStyleBackColor = false;
-            this.Kart.Click += new System.EventHandler(this.Kart_Click);
+            this.Yes.BackColor = System.Drawing.Color.Gray;
+            this.Yes.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Yes.Location = new System.Drawing.Point(178, 188);
+            this.Yes.Name = "Yes";
+            this.Yes.Size = new System.Drawing.Size(295, 99);
+            this.Yes.TabIndex = 20;
+            this.Yes.Text = "Да";
+            this.Yes.UseVisualStyleBackColor = false;
+            this.Yes.Click += new System.EventHandler(this.Yes_Click);
             // 
             // Confirmation
             // 
@@ -144,9 +143,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1058, 664);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.No);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Kart);
+            this.Controls.Add(this.Yes);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -169,8 +168,8 @@
         private Button Back;
         private Label label2;
         private Label label1;
-        private Button button3;
+        private Button No;
         private Label label4;
-        private Button Kart;
+        private Button Yes;
     }
 }
